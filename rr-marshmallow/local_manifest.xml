@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- This Manifest is for RR-Security fork with the latest Marshmallow Security patches -->
+  <!--Dependencies-->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
+  <project name="ResurrectionRemix-Devices/android_device_oppo_common" path="device/oppo/common" remote="github" revision="marshmallow" />
+
+  <!--Device-->
+  <project name="hunfatal/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="marshmallow" />
+  <project name="LineageOS/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="cm-13.0" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-13.0" />
+
+  <!--Custom-->
+  <remove-project name="android_frameworks_base" />
+  <project name="hunfatal/android_frameworks_base" path="frameworks/base" remote="github" revision="marshmallow" />
+</manifest>
