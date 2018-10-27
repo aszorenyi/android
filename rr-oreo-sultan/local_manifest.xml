@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!--Dependencies-->
-  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" revision="lineage-15.1" />
+  <project name="LineageOS/android_external_stlport" path="external/stlport" revision="lineage-15.1" />
   <project name="ResurrectionRemix-Devices/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="oreo" />
   <project name="hunfatal/android_device_oppo_common" path="device/oppo/common" revision="oreo" />
 
@@ -12,7 +13,7 @@
 
   <!--Custom-->
   <remove-project name="LineageOS/android_external_exfat" />
-  <project path="external/exfat" name="Oreo-onyx/external_exfat" />
+  <project path="external/exfat" name="Oreo-onyx/external_exfat" revision="lineage-15.1" />
 
   <remove-project name="LineageOS/android_frameworks_av" />
   <project path="frameworks/av" name="Oreo-onyx/frameworks_av" revision="lineage-15.1" />
