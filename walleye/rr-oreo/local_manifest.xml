@@ -16,7 +16,7 @@
   
   <!--Custom-->
   <remove-project name="ResurrectionRemix/android_frameworks_base" />
-  <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="oreo" />
+  <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="rr-oreo" />
 
   <remove-project name="ResurrectionRemix/Resurrection_packages_apps_Settings" />
   <project path="packages/apps/Settings" name="hunfatal/Resurrection_packages_apps_Settings" revision="oreo" />
