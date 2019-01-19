@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="munchycool"
+           fetch="https://github.com/munchycool/"
+           sync-j="6" />
+   
+  <remote  name="carbon"
+           fetch="https://github.com/CarbonROM/"      
+           sync-j="6" />
+   
+  <remote  name="tcu14"
+           fetch="https://github.com/TCU14/"
+           sync-j="6" />   
+ 
+  <remote  name="gapps"
+           fetch="https://gitlab.com/DirtyUnicorns/"
+           sync-j="6" />
+
+  <!--Dependencies-->
+  <remove-project path="external/json-c" name="android_external_json-c" remote="havoc" />
+  
+  <remove-project path="external/tinycompress" name="android_external_tinycompress" remote="havoc" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="carbon" revision="cr-7.0" />
+  
+  <remove-project path="external/libpng" name="android_external_libpng" remote="havoc" />
+  <project path="external/libpng" name="platform/external/libpng" groups="pdk" />
+  
+  <remove-project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="havoc" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="carbon" revision="cr-7.0" />
+ 
+  <remove-project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="havoc" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="carbon" revision="cr-7.0" />
+ 
+  <remove-project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="havoc" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="carbon" revision="cr-7.0" />
+
+  <project path="hardware/qcom/msm8998" name="platform/hardware/qcom/msm8998" remote="aosp" />
+
+  <!--Device-->
+  <project path="device/google/wahoo" name="munchy_device_google_wahoo" remote="munchycool" revision="havoc-pie" />
+  <project path="device/google/walleye" name="munchy_device_google_walleye" remote="munchycool" revision="havoc-pie" />
+  <project path="kernel/google/wahoo" name="android_kernel_google_wahoo" remote="tcu14" revision="p9x" />
+  <project path="vendor/google" name="proprietary_vendor_google" remote="munchycool" revision="pie" />
+  <project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="p9x"  />
+  
+  <!--Custom-->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="havoc-pie" remote="github" />
+</manifest>
