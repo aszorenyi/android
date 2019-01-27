@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!--Dependencies-->
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-16.0" />
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" revision="lineage-16.0" />
+
+  <!--Device-->
+  <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="pie-sultan" />
+  <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" revision="lineage-16.0-sultan" />
+  <project path="vendor/oneplus/onyx" name="YumeMichi/vendor_oneplus_onyx" revision="lineage-16.0" />
+
+  <!--Custom-->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="rr-pie" />
+
+  <!--Patcher (run "./patcher/patcher.sh" before each compilation)-->
+  <project name="hunfatal/patcher" path="patcher" revision="lineage-16.0" />
+</manifest>
+
