@@ -2,7 +2,7 @@
 <manifest>
   <!--Dependencies-->
   <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
-  <project name="hunfatal/android_device_oppo_common" path="device/oppo/common" remote="github" revision="nougat" />
+  <project name="aszorenyi/android_device_oppo_common" path="device/oppo/common" remote="github" revision="nougat" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
 
   <!--Device-->
@@ -14,7 +14,7 @@
   <remove-project name="android_frameworks_base" />
   <remove-project name="Resurrection_packages_apps_Settings" />
   <remove-project name="android_vendor_resurrection" />
-  <project name="hunfatal/android_frameworks_base" path="frameworks/base" remote="github" revision="rr-nougat" />
-  <project name="hunfatal/Resurrection_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="nougat" />
-  <project name="hunfatal/android_vendor_resurrection" path="vendor/cm" remote="github" revision="nougat" />
+  <project name="aszorenyi/android_frameworks_base" path="frameworks/base" remote="github" revision="rr-nougat" />
+  <project name="aszorenyi/Resurrection_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="nougat" />
+  <project name="aszorenyi/android_vendor_resurrection" path="vendor/cm" remote="github" revision="nougat" />
 </manifest>
