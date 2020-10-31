@@ -28,15 +28,14 @@
   <remove-project name="android_vendor_resurrection" />
   <project path="vendor/rr" name="aszorenyi/android_vendor_resurrection" remote="github" revision="Q" />
 
+  <remove-project name="packages_apps_DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="aszorenyi/android_packages_apps_DocumentsUI" remote="github" revision="ten" />
+
   <!-- Remove stock Lineage apps -->
   <remove-project name="LineageOS/android_packages_apps_AudioFX" />
   <remove-project name="LineageOS/android_packages_apps_Eleven" />
   <remove-project name="LineageOS/android_packages_apps_Etar" />
   <remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
   <remove-project name="LineageOS/android_packages_apps_Recorder" />
-
-  <!-- Stock apps from Havoc-OS -->
-  <remove-project name="LineageOS/android_packages_apps_DocumentsUI" />
-  <project path="packages/apps/DocumentsUI" name="havoc-os/android_packages_apps_DocumentsUI" remote="github" revision="ten" />
 
 </manifest>
