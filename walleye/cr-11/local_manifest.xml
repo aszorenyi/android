@@ -13,7 +13,7 @@
   <project path="packages/apps/ElmyraService" name="LineageOS/android_packages_apps_ElmyraService" remote="github" revision="lineage-18.1" />
 
   <!-- Gapps -->
-  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="r"  />
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="r-lineage"  />
 
   <!-- Custom -->
   <remove-project name="crdroidandroid/android_frameworks_base" />
