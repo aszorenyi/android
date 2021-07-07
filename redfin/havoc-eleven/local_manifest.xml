@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="8" />
+
+  <!-- Remove conflicting packages -->
+  <remove-project name="android_hardware_qcom_sm8150_display" />
+  <remove-project name="android_hardware_qcom_sm8150_media" />
+  <remove-project name="platform/hardware/qcom/sm8150/gps" />
+
+  <!-- Build -->
+  <remove-project name="android_build" />
+  <project path="build/make" name="aszorenyi/android_build" remote="github" revision="havoc-eleven">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <!-- Qcom -->
+  <remove-project name="platform/hardware/qcom/sm7250/gps" />
+  <project path="hardware/qcom/sm7250/gps" name="aszorenyi/android_hardware_qcom_sm7250_gps" remote="github" revision="havoc-eleven" groups="qcom_sm7250">
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7250/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7250/Android.bp" />
+  </project>
+
+  <remove-project name="platform/hardware/qcom/sm7250/media" />
+  <project path="hardware/qcom/sm7250/media" name="aszorenyi/android_hardware_qcom_sm7250_media" remote="github" revision="havoc-eleven" groups="qcom_sm7250" />
+
+  <remove-project name="platform/hardware/qcom/sm7250/display" />
+  <project path="hardware/qcom/sm7250/display" name="aszorenyi/android_hardware_qcom_sm7250_display" remote="github" revision="havoc-eleven" groups="qcom_sm7250" />
+
+  <!-- Device -->
+  <project path="device/google/redbull" name="aszorenyi/android_device_google_redbull" remote="github" revision="havoc-eleven" />
+  <project path="device/google/redfin" name="aszorenyi/android_device_google_redfin" remote="github" revision="havoc-eleven" />
+  <project path="kernel/google/redbull" name="aszorenyi/android_kernel_google_redbull" remote="github" revision="lineage-18.1" />
+  <project path="vendor/google" name="aszorenyi/proprietary_vendor_google" remote="github" revision="lineage-18.1" />
+
+  <!-- Toolchain -->
+  <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" groups="pdk,linux,x86" clone-depth="1" remote="aosp" revision="592150fc8ae9f48f2e73f390961f32ca6f5f6a9f" />
+
+  <!-- GApps -->
+  <remove-project name="android_vendor_gapps" />
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="r-havoc" />
+
+  <!-- Custom -->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="aszorenyi/android_frameworks_base" remote="github" revision="havoc-eleven" />
+
+  <remove-project name="android_packages_apps_ConfigCenter" />
+  <project path="packages/apps/ConfigCenter" name="aszorenyi/android_packages_apps_ConfigCenter" remote="github" revision="eleven" />
+</manifest>
