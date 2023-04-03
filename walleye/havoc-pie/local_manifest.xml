@@ -33,7 +33,7 @@
   <project path="device/google/wahoo" name="hunfatal/device_google_wahoo" remote="github" revision="havoc-pie" />
   <project path="device/google/walleye" name="hunfatal/device_google_walleye" remote="github" revision="havoc-pie" />
   <project path="kernel/google/wahoo" name="hunfatal/android_kernel_google_wahoo" remote="github" revision="p9x" />
-  <project path="vendor/google" name="buffal0b1ll/abc_vendor_google_walleye" remote="github" revision="abc-pie-jan" />
+  <project path="vendor/google" name="hunfatal/vendor_google_walleye" remote="github" revision="p9x" />
   <project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="p9x"  />
   
   <!--Custom-->
