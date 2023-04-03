@@ -42,4 +42,7 @@
 
   <remove-project name="android_packages_apps_HavocSettings" />
   <project path="packages/apps/HavocSettings" name="hunfatal/android_packages_apps_HavocSettings" revision="pie" remote="github" />
+
+  <remove-project name="android_external_google" />
+  <project path="external/google" name="hunfatal/android_external_google" revision="pie" remote="github" />
 </manifest>
