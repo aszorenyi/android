@@ -7,15 +7,15 @@
 
   <!--Device-->
   <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="oreo-sultan" />
-  <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" revision="lineage-15.1-sultan" />
-  <project path="vendor/oneplus/onyx" name="hunfatal/vendor_oneplus_onyx" revision="lineage-15.1-sultan" />
+  <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" revision="lineage-16.0" />
+  <project path="vendor/oneplus/onyx" name="YumeMichi/vendor_oneplus_onyx" revision="lineage-15.1-sultan" />
 
   <!--Custom-->
   <remove-project name="LineageOS/android_external_exfat" />
   <project path="external/exfat" name="Oreo-onyx/external_exfat" />
 
   <remove-project name="LineageOS/android_frameworks_av" />
-  <project path="frameworks/av" name="hunfatal/frameworks_av" revision="oreo" />
+  <project path="frameworks/av" name="Oreo-onyx/frameworks_av" revision="lineage-15.1" />
 
   <remove-project name="ResurrectionRemix/android_frameworks_base" />
   <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="oreo" />
