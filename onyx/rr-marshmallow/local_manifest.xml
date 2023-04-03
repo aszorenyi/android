@@ -12,5 +12,5 @@
 
   <!--Custom-->
   <remove-project name="android_frameworks_base" />
-  <project name="hunfatal/android_frameworks_base" path="frameworks/base" remote="github" revision="marshmallow" />
+  <project name="hunfatal/android_frameworks_base" path="frameworks/base" remote="github" revision="rr-marshmallow" />
 </manifest>
