@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!--Dependencies-->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" />
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" remote="github" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
+
+  <!--Device-->
+  <project name="LineageOS/android_device_oneplus_onyx" path="device/oneplus/onyx" remote="github" />
+  <project name="LineageOS/android_kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
+
+  <!--Custom-->
+  <remove-project name="android_frameworks_base" />
+  <remove-project name="android_vendor_resurrection" />
+  <project name="hunfatal/android_frameworks_base" path="frameworks/base" remote="github" revision="nougat-onyx" />
+  <project name="hunfatal/android_vendor_resurrection" path="vendor/cm" remote="github" revision="nougat" />
+
+
+</manifest>
