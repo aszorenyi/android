@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="6" />
+
+  <!-- Dependencies -->
+  <remove-project path="external/json-c" name="LineageOS/android_external_json-c" />
+  <project path="hardware/qcom/msm8998" name="platform/hardware/qcom/msm8998" remote="aosp" />
+
+  <!-- Device -->
+  <project path="device/google/wahoo" name="aszorenyi/device_google_wahoo" remote="github" revision="rr-q" />
+  <project path="device/google/walleye" name="aszorenyi/device_google_walleye" remote="github" revision="rr-q" />
+  <project path="kernel/google/wahoo" name="aszorenyi/android_kernel_google_wahoo" remote="github" revision="lineage-17.1" />
+  <project path="vendor/google" name="aszorenyi/proprietary_vendor_google" remote="github" revision="lineage-17.1" />
+
+  <!-- Gapps -->
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="q"  />
+  
+  <!-- Custom -->
+  <remove-project name="android_frameworks_base" />
+  <project path="frameworks/base" name="aszorenyi/android_frameworks_base" revision="rr-q" remote="github" />
+
+  <remove-project name="Resurrection_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="aszorenyi/Resurrection_packages_apps_Settings" remote="github" revision="Q" />
+
+  <remove-project name="android_vendor_resurrection" />
+  <project path="vendor/rr" name="aszorenyi/android_vendor_resurrection" remote="github" revision="Q" />
+
+  <!-- Remove stock Lineage apps -->
+  <remove-project name="LineageOS/android_packages_apps_AudioFX" />
+  <remove-project name="LineageOS/android_packages_apps_Eleven" />
+  <remove-project name="LineageOS/android_packages_apps_Etar" />
+  <remove-project name="LineageOS/android_packages_apps_ExactCalculator" />
+  <remove-project name="LineageOS/android_packages_apps_Recorder" />
+
+  <!-- Stock apps from Havoc-OS -->
+  <remove-project name="LineageOS/android_packages_apps_DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="havoc-os/android_packages_apps_DocumentsUI" remote="github" revision="ten" />
+
+</manifest>
