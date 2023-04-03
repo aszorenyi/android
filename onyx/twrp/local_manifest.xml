@@ -3,7 +3,7 @@
 <!-- Branch: twrp-8.1 -->
 <manifest>
     <remove-project name="android_bootable_recovery" />
-    <project name="hunfatal/bootable_recovery" path="bootable/recovery" remote="github" revision="twrp-8.1" />
+    <project name="aszorenyi/bootable_recovery" path="bootable/recovery" remote="github" revision="twrp-8.1" />
 
     <project name="YumeMichi/device_oneplus_onyx" path="device/oneplus/onyx" remote="github" revision="twrp-8.1" />
     <project name="YumeMichi/kernel_oneplus_onyx" path="kernel/oneplus/onyx" remote="github" revision="lineage-15.1-sultan" depth="1" />
