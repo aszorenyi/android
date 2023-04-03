@@ -5,8 +5,8 @@
            fetch="https://github.com/CarbonROM/"      
            sync-j="6" />
  
-  <remote  name="gapps"
-           fetch="https://gitlab.com/DirtyUnicorns/"
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
            sync-j="6" />
 
   <!--Dependencies-->
@@ -34,7 +34,7 @@
   <project path="device/google/walleye" name="aszorenyi/device_google_walleye" remote="github" revision="havoc-pie" />
   <project path="kernel/google/wahoo" name="aszorenyi/android_kernel_google_wahoo" remote="github" revision="p9x" />
   <project path="vendor/google" name="aszorenyi/proprietary_vendor_google" remote="github" revision="a9" />
-  <project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="p9x"  />
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="p"  />
   
   <!--Custom-->
   <remove-project name="android_frameworks_base" />
