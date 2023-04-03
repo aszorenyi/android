@@ -2,8 +2,8 @@
 <manifest>
   <!--Dependencies-->
   <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
-  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" revision="lineage-15.1" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-15.1" />
+  <project name="hunfatal/android_device_oppo_common" path="device/oppo/common" revision="oreo" />
 
   <!--Device-->
   <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="oreo" />
