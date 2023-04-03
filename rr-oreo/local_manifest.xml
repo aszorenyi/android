@@ -6,7 +6,7 @@
   <project name="hunfatal/android_device_oppo_common" path="device/oppo/common" revision="oreo" />
 
   <!--Device-->
-  <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="oreo" />
+  <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="oreo-sultan" />
   <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" revision="lineage-15.1-sultan" />
   <project path="vendor/oneplus/onyx" name="YumeMichi/vendor_oneplus_onyx" revision="lineage-15.1-sultan" />
 
