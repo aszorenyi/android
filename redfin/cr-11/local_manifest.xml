@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="6" />
+
+  <!-- Remove conflicting packages -->
+  <remove-project name="crdroidandroid/android_packages_apps_Matlog" />
+
+  <!-- Device -->
+  <project path="device/google/redbull" name="aszorenyi/android_device_google_redbull" remote="github" revision="crdroid-11.0" />
+  <project path="device/google/redfin" name="aszorenyi/android_device_google_redfin" remote="github" revision="crdroid-11.0" />
+  <project path="kernel/google/redbull" name="aszorenyi/android_kernel_google_redbull" remote="github" revision="lineage-18.1" />
+  <project path="vendor/google" name="aszorenyi/proprietary_vendor_google" remote="github" revision="lineage-18.1" />
+
+  <!-- GApps -->
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="r-redfin" />
+
+  <!-- Custom -->
+  <remove-project name="crdroidandroid/android_frameworks_base" />
+  <project path="frameworks/base" name="aszorenyi/android_frameworks_base" remote="github" revision="crdroid-11.0" />
+
+  <remove-project name="crdroidandroid/android_packages_apps_crDroidSettings" />
+  <project path="packages/apps/crDroidSettings" name="aszorenyi/android_packages_apps_crDroidSettings" remote="github" revision="11.0" />
+
+  <remove-project name="crdroidandroid/android_vendor_crdroid" />
+  <project path="vendor/lineage" name="aszorenyi/android_vendor_crdroid" remote="github" revision="11.0" />
+</manifest>
