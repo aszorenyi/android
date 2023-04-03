@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!--Dependencies-->
+  <project name="LineageOS/android_device_oppo_common" path="device/oppo/common" revision="lineage-15.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" revision="lineage-15.1" />
+
+  <!--Device-->
+  <project path="device/oneplus/onyx" name="hunfatal/device_oneplus_onyx" revision="oreo" />
+  <project path="kernel/oneplus/onyx" name="YumeMichi/kernel_oneplus_onyx" revision="lineage-15.1-sultan" />
+  <project path="vendor/oneplus/onyx" name="YumeMichi/vendor_oneplus_onyx" revision="lineage-15.1-sultan" />
+  <project name="LineageOS/android_external_sony_boringssl-compat" path="external/sony/boringssl-compat" />
+
+  <!--Custom-->
+  <remove-project name="ResurrectionRemix/android_frameworks_base" />
+  <project path="frameworks/base" name="hunfatal/android_frameworks_base" revision="oreo" />
+
+  <remove-project name="LineageOS/android_frameworks_av" />
+  <project path="frameworks/av" name="Oreo-onyx/frameworks_av" revision="lineage-15.1" />
+
+  <remove-project name="LineageOS/android_external_exfat" />
+  <project path="external/exfat" name="Oreo-onyx/external_exfat" />
+</manifest>
+
