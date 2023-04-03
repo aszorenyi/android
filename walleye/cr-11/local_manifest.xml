@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="6" />
+
+  <!-- Device -->
+  <project path="device/google/wahoo" name="aszorenyi/device_google_wahoo" remote="github" revision="crdroid-11.0" />
+  <project path="device/google/muskie" name="aszorenyi/device_google_walleye" remote="github" revision="crdroid-11.0" />
+  <project path="kernel/google/wahoo" name="aszorenyi/android_kernel_google_wahoo" remote="github" revision="lineage-18.1" />
+  <project path="vendor/google" name="aszorenyi/proprietary_vendor_google" remote="github" revision="lineage-18.1" />
+  <project path="packages/apps/ElmyraService" name="LineageOS/android_packages_apps_ElmyraService" remote="github" revision="lineage-18.1" />
+
+  <!-- Gapps -->
+  <project path="vendor/pixelgapps" name="aszorenyi/android_vendor_pixelgapps" remote="gitlab" revision="r"  />
+
+  <!-- Custom -->
+  <remove-project name="crdroidandroid/android_frameworks_base" />
+  <project path="frameworks/base" name="aszorenyi/android_frameworks_base" revision="crdroid-11.0" remote="github" />
+
+  <remove-project name="crdroidandroid/android_packages_apps_crDroidSettings" />
+  <project path="packages/apps/crDroidSettings" name="aszorenyi/android_packages_apps_crDroidSettings" remote="github" revision="11.0" />
+</manifest>
