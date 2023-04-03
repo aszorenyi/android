@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Remotes -->
-  <remote  name="munchycool"
-           fetch="https://github.com/munchycool/"
-           sync-j="6" />
-   
   <remote  name="carbon"
            fetch="https://github.com/CarbonROM/"      
            sync-j="6" />
-   
-  <remote  name="tcu14"
-           fetch="https://github.com/TCU14/"
-           sync-j="6" />   
  
   <remote  name="gapps"
            fetch="https://gitlab.com/DirtyUnicorns/"
@@ -38,10 +30,10 @@
   <project path="hardware/qcom/msm8998" name="platform/hardware/qcom/msm8998" remote="aosp" />
 
   <!--Device-->
-  <project path="device/google/wahoo" name="munchy_device_google_wahoo" remote="munchycool" revision="havoc-pie" />
-  <project path="device/google/walleye" name="munchy_device_google_walleye" remote="munchycool" revision="havoc-pie" />
-  <project path="kernel/google/wahoo" name="android_kernel_google_wahoo" remote="tcu14" revision="p9x" />
-  <project path="vendor/google" name="proprietary_vendor_google" remote="munchycool" revision="pie" />
+  <project path="device/google/wahoo" name="hunfatal/device_google_wahoo" remote="github" revision="havoc-pie" />
+  <project path="device/google/walleye" name="hunfatal/device_google_walleye" remote="github" revision="havoc-pie" />
+  <project path="kernel/google/wahoo" name="hunfatal/android_kernel_google_wahoo" remote="github" revision="p9x" />
+  <project path="vendor/google" name="buffal0b1ll/abc_vendor_google_walleye" remote="github" revision="abc-pie-jan" />
   <project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="p9x"  />
   
   <!--Custom-->
