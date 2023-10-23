@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remotes -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/"
+           sync-j="6" />
+
+  <!-- Device -->
+  <project path="device/google/redbull" name="aszorenyi/android_device_google_redbull" remote="github" revision="crdroid-13.0" />
+  <project path="device/google/redfin" name="aszorenyi/android_device_google_redfin" remote="github" revision="crdroid-13.0" />
+  <project path="kernel/google/redbull" name="aszorenyi/android_kernel_google_redbull" remote="github" revision="lineage-20" />
+  <project path="vendor/google/redfin" name="aszorenyi/vendor_google_redfin" remote="github" revision="thirteen" />
+
+  <!-- GApps -->
+ <project path="vendor/gms" name="aszorenyi/android_vendor_gms" remote="gitlab" revision="crdroid-13.0" />
+
+  <!-- Custom -->
+  <remove-project name="crdroidandroid/android_frameworks_base" />
+  <project path="frameworks/base" name="aszorenyi/android_frameworks_base" remote="github" revision="crdroid-13.0" />
+
+  <remove-project name="crdroidandroid/android_packages_apps_crDroidSettings" />
+  <project path="packages/apps/crDroidSettings" name="aszorenyi/android_packages_apps_crDroidSettings" remote="github" revision="13.0" />
+</manifest>
+
